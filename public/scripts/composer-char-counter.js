@@ -9,11 +9,6 @@
 // Step 4: Effect
 
 $(document).ready(() => {
-
-  $('.the-name').mouseenter(function() {
-    $('h2').text("Hello");
-  });
-
   //keyup event counts a character when the key is released
   $('textarea').keyup(function(){
     const tweetLength = this.value.length;
