@@ -23,3 +23,22 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+body {
+  /* font-family: is used to set the main font, the fonts after the comma are back up fonts if the first one doesn't work*/
+  font-family: Source Sans Pro, sans-serif;
+}
+
+body .container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+
+/* MOVED TO NAV.CSS */
+/* nav is inside of the body, this will overwrite the body style to give the nav a specific font*/
+/* nav {
+  font-family: Bungee, sans-serif;
+} */

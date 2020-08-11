@@ -1,0 +1,15 @@
+/* nav style sheets */
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 120px;
+  background-color: #4056A1;
+  color: #fff;
+  font-family: Bungee, sans-serif;
+  align-items: center;
+}
+
+/* Gave the <span> a class name tweeter, so I can access the content in span to style it*/
+nav .tweeter {
+  margin-left: 1.5em;
+}

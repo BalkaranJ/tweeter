@@ -1,0 +1,19 @@
+/* header style sheet */
+
+header {
+  height: 400px;
+  width: 100%;
+  background-color: orange;
+  background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
+}
+
+header .the-image {
+  display: flex;
+  justify-content: center;
+}
+
+header .the-name {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+} 
