@@ -4,6 +4,10 @@ body .container .the-form {
   flex-direction: column;
 }
 
+body .container .new-tweet {
+  width: 100%
+}
+
 /* Styling for the tweet button */
 body .container .new-tweet .tweet-button {
   font-family: Bungee, sans-serif;
@@ -24,7 +28,7 @@ body .container .new-tweet .counter {
 body .container .new-tweet .tweet-text {
   background: transparent;
   border: none;
-  border-bottom: 3px solid darkgray;
+  border-bottom: 3px solid #545149;
   margin-bottom: 10px;
 }
 
@@ -33,4 +37,3 @@ body .container .new-tweet .button-container {
   display: flex;
   justify-content: space-between;
 }
-

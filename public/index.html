@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet"> 
 
     <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/layout.css"
+    type="text/css" />
 
     <!-- Nav CSS -->
     <link rel="stylesheet" href="/styles/nav.css"
@@ -25,6 +26,10 @@
     <link rel="stylesheet" href="/styles/new-tweet.css"
     type="text/css" />
 
+    <!-- Tweet Boxes CSS -->
+    <link rel="stylesheet" href="/styles/tweet-box.css"
+    type="text/css" />
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -33,6 +38,9 @@
     
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/93ddde1865.js" crossorigin="anonymous"></script>
 
 
   </head>
@@ -67,5 +75,33 @@
           </div>
       </section>      
     </main>
+
+    <!-- Tweet Box Section -->
+    <section class='tweets'>
+      <article class='the-box'>
+        <div class='tweet-header'>
+          <div class='tweet-username'>
+            <!-- <img src=""/> -->
+            <h6 class='username'>username</h6>
+          </div>
+          <div class='tweet-handle'>
+            <h6 class='handle'>@handle</h6>
+          </div>
+        </div>
+        <div class='tweet-message'>
+          <h4 class='user-tweet'>this is the user's tweet</h4>
+        </div>
+        <hr class='tweet-divider'>
+        <footer class='tweet-footer'>
+          <p>10 days ago</p>
+          <div class='the-images'>
+            <i class="fas fa-flag"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </footer>
+      </section>
+    </article>
+      
   </body>
 </html>

@@ -1,0 +1,75 @@
+/* The Stylesheet for the tweet-box */
+
+/* Dealing with the whole section */ 
+body .tweets {
+  display: flex;
+  justify-content: center;
+}
+
+/* Dealing with the box around the article */
+body .tweets .the-box {
+  border: 3px solid #545149;
+  margin-top: 30px;
+  width: 100%;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+/* Dealing with the username */
+body .tweets .username {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 10%;
+}
+
+body .tweets .tweet-handle {
+  opacity: 0;
+  color: lightgray;
+}
+
+/* Deals with the Tweet header */
+body .tweets .tweet-header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+/* Dealing with the users tweet */
+body .tweets .tweet-message {
+  display: flex;
+  justify-content: center;
+
+}
+
+/* Deals with the line between the tweet message and the tweet footer */
+body .tweets .tweet-divider {
+  height: 2px;
+  background-color: #545149;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+/* Deals with the tweet footer */
+body .tweets .tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 10px;  
+}
+
+/* Deals with the 3 images in the footer */
+body .the-images img{
+  height: 20px;
+  border: transparent;
+}
+
+body .tweets .the-box:hover .tweet-handle{
+  opacity: 1;
+}
+
+body .tweets .the-box:hover {
+  box-shadow: 5px 10px #888888;
+}
