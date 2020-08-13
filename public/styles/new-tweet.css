@@ -37,3 +37,15 @@ body .container .new-tweet .button-container {
   display: flex;
   justify-content: space-between;
 }
+
+/* If a tweet is over the length of max character, this is the error message */
+body .container .new-tweet #error-tweet-length {
+  visibility: hidden;
+  border: 3px solid #ff0000;
+  font-style: italic;
+  color: #ff4242;
+  padding-top: 0.5em;
+  padding-left: 15em;
+  padding-bottom: 0.5em;
+
+}

@@ -5,11 +5,14 @@ nav {
   height: 120px;
   background-color: #4056A1;
   color: #fff;
-  font-family: Bungee, sans-serif;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-/* Gave the <span> a class name tweeter, so I can access the content in span to style it*/
 nav .tweeter {
   margin-left: 1.5em;
+  font-family: Bungee, sans-serif;
 }
+

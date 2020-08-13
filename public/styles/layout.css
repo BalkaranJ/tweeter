@@ -35,10 +35,3 @@ body .container {
   margin: 0 auto;
   width: 90%;
 }
-
-
-/* MOVED TO NAV.CSS */
-/* nav is inside of the body, this will overwrite the body style to give the nav a specific font*/
-/* nav {
-  font-family: Bungee, sans-serif;
-} */

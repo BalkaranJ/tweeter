@@ -3,16 +3,23 @@
 /* Dealing with the whole section */ 
 body .tweets {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Dealing with the box around the article */
 body .tweets .the-box {
   border: 3px solid #545149;
-  margin-top: 30px;
-  width: 100%;
+  width: 90%;
+  margin-top: 1em;
   margin-right: 2em;
   margin-left: 2em;
+  margin-bottom: 0.5em;
+}
+
+/* Deals with the User Profile Pictures in tweet box */
+body .tweets .user-image {
+  margin-top: 50px;
 }
 
 /* Dealing with the username */
@@ -38,8 +45,13 @@ body .tweets .tweet-header {
 /* Dealing with the users tweet */
 body .tweets .tweet-message {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-left: 1em;
+}
 
+/* Deals with the user tweet specifically */
+body .tweets .tweet-message .user-tweet {
+  margin-bottom: 0;
 }
 
 /* Deals with the line between the tweet message and the tweet footer */
@@ -57,7 +69,7 @@ body .tweets .tweet-footer {
   align-items: center;
   margin-left: 1em;
   margin-right: 1em;
-  font-size: 10px;  
+  font-size: 0.5em;  
 }
 
 /* Deals with the 3 images in the footer */
