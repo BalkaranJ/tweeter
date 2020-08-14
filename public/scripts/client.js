@@ -11,18 +11,6 @@ const escape =  function(str) {
   return div.innerHTML;
 }
 
-//How an escape function works line by line
-
-/* <script>$('body').empty()</script>
-
-<div></div>
-
-<div><script>$('body').empty()</script>
-</div>
-
-returns as string using .innerHTML script $() */
-
-
  //Create a function that will generatre the DOM structure for a tweet, given a tweet object
 //return a tweet <article> element which gets prepended (to show the newest tweet) to the Tweet Box section in the html file (.tweets)
 const createTweetElement = function(tweetData) {
