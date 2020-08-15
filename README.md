@@ -6,8 +6,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product Screenshots
 
-!["Screenshot of the home page in widescreen"](#)
-![""](#)
+!["Screenshot of the home page in widescreen"](https://raw.githubusercontent.com/BalkaranJ/tweeter/master/docs/tweeter-widescreen.png)
+!["Screenshot of the home page after breakpoint for small screens"](https://raw.githubusercontent.com/BalkaranJ/tweeter/master/docs/breakpoint-small-screen-tweeter.png)
 
 ## Getting Started
 
