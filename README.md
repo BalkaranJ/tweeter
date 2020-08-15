@@ -6,7 +6,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product Screenshots
 
-![""](#)
+!["Screenshot of the home page in widescreen"](#)
 ![""](#)
 
 ## Getting Started
@@ -23,4 +23,4 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## About
 
-CSS Styling by: Balkaran Jaswal
+Created by: Balkaran Jaswal
