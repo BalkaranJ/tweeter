@@ -1,7 +1,9 @@
 /* nav style sheets */
 nav {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1.5em;
+  font-family: 'Times New Roman', Times, serif;
   height: 120px;
   background-color: #4056A1;
   color: #fff;
@@ -12,7 +14,14 @@ nav {
 }
 
 nav .tweeter {
-  margin-left: 1.5em;
+  /* margin-left: 1.5em; */
   font-family: Bungee, sans-serif;
 }
 
+.compose-tweet-button {
+  cursor: pointer;
+  background-color: #4056A1;
+  border: transparent;
+  color: antiquewhite;
+
+}

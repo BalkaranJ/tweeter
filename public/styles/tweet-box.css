@@ -18,16 +18,16 @@ body .tweets .the-box {
 }
 
 /* Deals with the User Profile Pictures in tweet box */
-body .tweets .user-image {
-  margin-top: 50px;
+.tweet-username {
+  display: flex;
+  align-items: center;
 }
 
-/* Dealing with the username */
-body .tweets .username {
-  display: flex;
-  justify-content: flex-start;
-  margin-right: 10%;
+.username {
+  padding: 0 20px;
 }
+
+
 
 body .tweets .tweet-handle {
   opacity: 0;

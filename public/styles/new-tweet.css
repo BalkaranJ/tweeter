@@ -10,6 +10,7 @@ body .container .new-tweet {
 
 /* Styling for the tweet button */
 body .container .new-tweet .tweet-button {
+  cursor: pointer;
   font-family: Bungee, sans-serif;
   color: aliceblue;
   background-color: #4056A1;
@@ -19,9 +20,10 @@ body .container .new-tweet .tweet-button {
 }
 
 /* Styling for the 140 Character Limit Counter*/
-body .container .new-tweet .counter {
+.counter {
   display: inline-block;
   font-family: Bungee, sans-serif;
+  color: #545149;
 }
 
 /* Styling for the input text box */
@@ -39,13 +41,38 @@ body .container .new-tweet .button-container {
 }
 
 /* If a tweet is over the length of max character, this is the error message */
-body .container .new-tweet #error-tweet-length {
+.error-tweet-length-class {
   visibility: hidden;
   border: 3px solid #ff0000;
   font-style: italic;
   color: #ff4242;
   padding-top: 0.5em;
-  padding-left: 15em;
+  padding-left: auto;
   padding-bottom: 0.5em;
-
 }
+
+
+/* Laptop/Desktop miniimum width of 1024px */
+@media only screen and (min-width: 1024px) {
+  
+  .error-tweet-length-class {
+    display: flex;
+    visibility: hidden;
+  }
+
+  .error-box {
+    margin-top: 6.3em;
+  }
+  
+}
+
+
+/* Class for JS */
+.red-text {
+  color: red;
+}
+
+.show-error {
+  visibility: visible;
+}
+

@@ -30,7 +30,7 @@ const createTweetElement = function(tweetData) {
     </div>
     <hr class='tweet-divider'>
     <footer class='tweet-footer'>
-      <p>${tweetData.created_at}</p>
+      <p>${convertMillisecondsToDays(tweetData.created_at)} days ago</p>
       <div class='the-images'>
         <i class="fas fa-flag"></i>
         <i class="fas fa-retweet"></i>
@@ -39,6 +39,11 @@ const createTweetElement = function(tweetData) {
     </footer>
   </article> 
 `;
+}
+
+const convertMillisecondsToDays = function(milliseconds) {
+  const days = (Date.now() - milliseconds) / (1000*60*60*24);
+  return Math.ceil(days);
 }
 
 const data = [

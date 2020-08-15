@@ -10,22 +10,13 @@ $(document).ready(() => {
     let counter = $('.counter')
     counter.val(charsLeft);
 
-    // if (counter.val() < 0) {
-    //   counter.css('color', 'red');
-    // } else {
-    //   counter.css('color', '#545149');
-    // }
-    // Ternary operator
-    charsLeft < 0 ? counter.css('color', 'red')  : counter.css('color', '#545149');
-
-    //Incase the character limit for a tweet is passed
-      //This will ensure that the user understands why the tweet won't submit, and it will disable the tweet button while the counter displays red and negative.
+    $('#error-tweet-length').removeClass('show-error');
+    // $('#tweet-button').attr('disabled', false);
+    counter.removeClass('red-text'); 
     if (charsLeft < 0) {
-      $('#error-tweet-length').css('visibility', 'visible');
+      $('#error-tweet-length').addClass('show-error');
       $('#tweet-button').attr('disabled', true);
-    } else {
-      $('#error-tweet-length').css('visibility', 'none');
-      $('#tweet-button').attr('disabled', false);
+      counter.addClass('red-text');
     }
   });
 });
