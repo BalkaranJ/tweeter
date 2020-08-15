@@ -4,15 +4,12 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-
 const escape =  function(str) {
   const div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 }
 
- //Create a function that will generatre the DOM structure for a tweet, given a tweet object
-//return a tweet <article> element which gets prepended (to show the newest tweet) to the Tweet Box section in the html file (.tweets)
 const createTweetElement = function(tweetData) {
   return `
 <article class='the-box'>
