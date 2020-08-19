@@ -92,13 +92,16 @@ $(document).ready(function(){
   const $form = $(".the-form");
   $form.submit(function(event) {
     event.preventDefault();
-    const serialized = $(this).serialize();
-
-    $.ajax('/tweets/', {method:'POST', data:serialized})
-    .then(() => {
-      $('.tweets').empty();
-      loadtweets();
-    });
+    const userTweet = $('textarea').val().trim().length;
+    if (userTweet > 0) {
+      //submit the tweet after tweet is trimmed
+      const serialized = $(this).serialize();
+      $.ajax('/tweets/', {method:'POST', data:serialized})
+      .then(() => {
+        $('.tweets').empty();
+        loadtweets();
+      });
+    }
   }); 
 });
 

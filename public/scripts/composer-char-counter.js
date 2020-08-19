@@ -11,7 +11,6 @@ $(document).ready(() => {
     counter.val(charsLeft);
 
     $('#error-tweet-length').removeClass('show-error');
-    // $('#tweet-button').attr('disabled', false);
     counter.removeClass('red-text'); 
     if (charsLeft < 0) {
       $('#error-tweet-length').addClass('show-error');
