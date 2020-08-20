@@ -101,6 +101,9 @@ $(document).ready(function(){
         $('.tweets').empty();
         loadtweets();
       });
+    } else {
+      $('#error-tweet-length').addClass('show-error');
+      counter.addClass('red-text');
     }
   }); 
 });
